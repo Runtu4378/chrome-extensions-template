@@ -1,0 +1,36 @@
+{
+  "name": "chrome-extensions-template",
+  "description": "chrome extensions 脚手架，使用 webpack + typescript",
+  "version": "1.0.0",
+  "homepage_url": "",
+  "manifest_version": 2,
+  "icons": {
+    "16": "assets/chrome-logo.png",
+    "48": "assets/chrome-logo.png",
+    "128": "assets/chrome-logo.png"
+  },
+  "permissions": [],
+  "content_scripts": [
+    {
+      "matches": [],
+      "js": [
+        "dist/content.js"
+      ],
+      "run_at": "document_start",
+      "css": [
+        "dist/content.css"
+      ]
+    }
+  ],
+  "background": {
+    "scripts": [
+      "dist/background.js"
+    ],
+    "persistence": false
+  },
+  "browser_action": {
+    "default_icon": "assets/chrome-logo.png",
+    "default_title": "something",
+    "default_popup": "dist/popup.html"
+  }
+}

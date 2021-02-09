@@ -1,0 +1,22 @@
+{
+  "compilerOptions": {
+    "baseUrl": ".",
+    "outDir": "./dist",
+    "strict": true,
+    "experimentalDecorators": true,
+    "forceConsistentCasingInFileNames": true,
+    "moduleResolution": "node",
+    "downlevelIteration": true,
+    "isolatedModules": true,
+    "noImplicitAny": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "allowJs": true,
+    "target": "ES5",
+    "importHelpers": true,
+    "module": "CommonJS",
+    "lib": ["dom", "dom.iterable", "esnext"],
+    "sourceMap": false
+  },
+  "exclude": ["./dist", "node_modules", "package/lib", "./config"]
+}

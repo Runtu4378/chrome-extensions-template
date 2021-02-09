@@ -1,0 +1,9 @@
+# misc
+.DS_Store
+
+# dependencies
+node_modules
+
+# production
+extensions/dist
+./*.zip
