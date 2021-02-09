@@ -21,14 +21,9 @@ const packageJSONPath = path.resolve(__dirname, '../package.json')
 const manifestContent = readJson(manifestPath)
 const packageJSONContent = readJson(packageJSONPath)
 
-console.log(manifestContent)
-console.log(packageJSONContent)
-
 Object.keys(SYNC_KEY).forEach(key => {
   const manifestValueKey = SYNC_KEY[key]
 
-  console.log(key)
-  console.log(key in packageJSONContent)
   if (key in packageJSONContent) {
     manifestContent[manifestValueKey] = packageJSONContent[key]
   }
