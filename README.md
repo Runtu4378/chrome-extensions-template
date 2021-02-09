@@ -2,6 +2,11 @@
 
 chrome extensions 脚手架，使用 webpack + typescript
 
+## 特性
+
+- webpack 支持 typescript 和 css
+- 通过脚本自动将 `package.json` 中的 name、description、version 字段同步到 `extensions/manifest.json` 中，方便代码维护
+
 ## 指令
 
 - **manifest**: 将 packageJson 中的模块名、描述、版本号等信息同步到 `extensions/manifest.json` 中
