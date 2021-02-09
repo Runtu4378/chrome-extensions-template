@@ -9,7 +9,7 @@ chrome extensions 脚手架，使用 webpack + typescript
 
 ## 指令
 
-- **manifest**: 将 packageJson 中的模块名、描述、版本号等信息同步到 `extensions/manifest.json` 中
+- **manifest:sync**: 将 packageJson 中的模块名、描述、版本号等信息同步到 `extensions/manifest.json` 中
 - **dev**: 启动本地服务器
 - **build**: 打包并对模块进行打包压缩，在根目录输出扩展压缩包
 
